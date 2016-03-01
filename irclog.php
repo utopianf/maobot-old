@@ -20,7 +20,7 @@ session_regenerate_id(true);
 #    header("Location: logout.php");
 #    exit;
 #}
-$default  = parse_ini_file("sql.ini", true)["DEFAULT"];
+$default  = parse_ini_file("../../../sql.ini", true)["DEFAULT"];
 $sql_user   = $default["user"];
 $sql_server = $default["server"];
 $sql_pass   = $default["passwd"];

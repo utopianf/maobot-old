@@ -15,7 +15,7 @@ class sql:
 
     def __enter__(self):
         config = configparser.ConfigParser()
-        config.read("../sql.ini")
+        config.read("../../../../sql.ini")
         default = config["DEFAULT"]
         self.con = pymysql.connect(host=default['server'],
                 user=default['user'],
